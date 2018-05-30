@@ -1,0 +1,2 @@
+# Run Pharbers Synchronize Max_Data job
+00 24 * * * sh /home/jeorch/work/shell/ph_sync_max_data.sh
