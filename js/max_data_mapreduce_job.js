@@ -6,7 +6,7 @@ db.getCollectionNames().forEach(
                 query: { MARKET: { $exists: true } },
                 out: {
                     replace: collection + "_NATION_SALES",
-                    db: "Max_Cores"
+                    db: "pharbers-max-aggregation"
                 }
             }
         );
@@ -16,7 +16,7 @@ db.getCollectionNames().forEach(
                 query: { belong2company: 1 },
                 out: {
                     replace: collection + "_NATION_COMPANY_SALES",
-                    db: "Max_Cores"
+                    db: "pharbers-max-aggregation"
                 }
             }
         );
@@ -26,7 +26,7 @@ db.getCollectionNames().forEach(
                 query: { MARKET: { $exists: true } },
                 out: {
                     replace: collection + "_PROVINCE_SALES",
-                    db: "Max_Cores"
+                    db: "pharbers-max-aggregation"
                 }
             }
         );
@@ -36,7 +36,7 @@ db.getCollectionNames().forEach(
                 query: { belong2company: 1 },
                 out: {
                     replace: collection + "_PROVINCE_COMPANY_SALES",
-                    db: "Max_Cores"
+                    db: "pharbers-max-aggregation"
                 }
             }
         );
@@ -46,7 +46,7 @@ db.getCollectionNames().forEach(
                 query: { MARKET: { $exists: true } },
                 out: {
                     replace: collection + "_CITY_SALES",
-                    db: "Max_Cores"
+                    db: "pharbers-max-aggregation"
                 }
             }
         );
@@ -56,7 +56,7 @@ db.getCollectionNames().forEach(
                 query: { belong2company: 1 },
                 out: {
                     replace: collection + "_CITY_COMPANY_SALES",
-                    db: "Max_Cores"
+                    db: "pharbers-max-aggregation"
                 }
             }
         );
